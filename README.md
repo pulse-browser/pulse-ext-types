@@ -1,2 +1,3 @@
 # pulse-ext-types
-A set of type definition files specificly for pulse browser
+
+Provides type definition and docs for webextention apis that are available ONLY within pulse browser.
