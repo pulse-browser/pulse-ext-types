@@ -1,5 +1,12 @@
 {
   "name": "pulse-ext-types",
   "version": "1.0.0",
-  "typings": "types/main.d.ts"
+  "typings": "types/main.d.ts",
+  "devDependencies": {
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "docs": "typedoc types/main.d.ts"
+  }
 }

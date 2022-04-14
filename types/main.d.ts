@@ -1,3 +1,7 @@
+/**
+ *
+ */
+
 interface EvListener<T extends Function> {
   /**
    * Adds a listener to this event.

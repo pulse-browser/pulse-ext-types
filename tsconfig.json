@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "lib": ["es6"]
+  },
+  "files": ["types/main.d.ts", "types/prefs.d.ts"],
+  "exclude": ["node_modules"]
+}
