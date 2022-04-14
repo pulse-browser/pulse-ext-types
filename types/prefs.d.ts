@@ -13,7 +13,7 @@ declare namespace experiments.prefs {
    * @throws An error if the type of the preference is not a string, boolean or number
    * @throws An error if Pulse cannot retrieve the preference
    */
-  export function get(name: string): Promise<string | boolean | number | null>;
+  export function get(name: string): Promise<string | boolean | number | null>
 
   /**
    * Sets the value of a preference
@@ -24,14 +24,14 @@ declare namespace experiments.prefs {
   export function set(
     name: string,
     value: string | boolean | number
-  ): Promise<unknown>;
+  ): Promise<unknown>
 
   /**
    * Allows for the resetting of a preference
    *
    * @param name The preference you wish to reset
    */
-  export function reset(name: string): Promise<void>;
+  export function reset(name: string): Promise<void>
 
   /**
    * Locks the value of a preference so it cannot be changed by the user in
@@ -39,40 +39,40 @@ declare namespace experiments.prefs {
    *
    * @param name The name of the preference you wish to lock
    */
-  export function lock(name: string): Promise<void>;
+  export function lock(name: string): Promise<void>
 
   /**
    * Unlocks a preference so it can be changed in `about:config`
    *
    * @param name The name of the preference you wish to unlock
    */
-  export function unlock(name: string): Promise<void>;
+  export function unlock(name: string): Promise<void>
 
   /**
    * Checks if a preference is available to edit
    *
    * @param name The name of a preference you wish to check
    */
-  export function isLocked(name: string): Promise<boolean>;
+  export function isLocked(name: string): Promise<boolean>
 
   /**
    * Checks if the user has modified a specific preference value
    *
    * @param name The name of the preference you wish to check
    */
-  export function hasUserValue(name: string): Promise<boolean>;
+  export function hasUserValue(name: string): Promise<boolean>
 
   /**
    * Direct mapping to `Services.prefs.getChildList`
    *
    * @todo What does this do?
    */
-  export function getChildList(name: string): Promise<unknown>;
+  export function getChildList(name: string): Promise<unknown>
 
   /**
    * Listens for changes to an event.
    *
    * @todo Figure out the exact type for this
    */
-  export const onChange: Listener<unknown>;
+  export const onChange: Listener<unknown>
 }

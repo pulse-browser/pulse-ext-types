@@ -2,20 +2,20 @@ interface EvListener<T extends Function> {
   /**
    * Adds a listener to this event.
    */
-  addListener: (callback: T) => void;
+  addListener: (callback: T) => void
 
   /**
    * Stop listening to this event. The listener argument is the listener to remove
    */
-  removeListener: (listener: T) => void;
+  removeListener: (listener: T) => void
 
   /**
    * Check whether listener is registered for this event. Returns true if it is listening, false otherwise.
    */
-  hasListener: (listener: T) => boolean;
+  hasListener: (listener: T) => boolean
 }
 
-type Listener<T> = EvListener<(arg: T) => void>;
+type Listener<T> = EvListener<(arg: T) => void>
 
 /**
  * Experiments contains a number of custom APIs that are implemented for pulse
