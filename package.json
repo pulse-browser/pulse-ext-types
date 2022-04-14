@@ -1,0 +1,5 @@
+{
+  "name": "pulse-ext-types",
+  "version": "1.0.0",
+  "typings": "types/main.d.ts"
+}
